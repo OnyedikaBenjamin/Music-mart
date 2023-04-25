@@ -1,0 +1,76 @@
+// $font-stack: -Roboto Condensed, Sans-Serif, "Segoe UI", Roboto, Oxygen,
+//   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+// $font-size: 15px;
+// $color: white;
+// $background-color: #121212;
+// $error-color: #f21e08;
+// $max-width: 350px;
+
+// // --headingFont: 'Roboto Condensed', Sans-Serif;
+// // --bodyFont: 'Cabin', Sans-Serif;
+
+// body {
+//   // background-color: $background-color;  
+//   font-family: $font-stack;
+//   font-size: $font-size;
+//   color: $color;
+//   width: 60%;
+//   margin: 90px auto;
+
+//   @media screen and (max-width: 600px) {
+//     width: 90%;
+//   }
+// }
+
+// .google{
+    
+// }
+
+// .errorMsg {
+//   max-width: $max-width;
+//   color: $error-color;
+//   padding: 2px 0;
+//   margin-top: 2px;
+//   font-size: 14px;
+//   font-weight: 300;
+
+//   @media screen and (max-width: 600px) {
+//     max-width: 100%;
+//   }
+// }
+
+// .form-control {
+//   display: flex;
+//   flex-direction: column;
+//   margin-bottom: 10px;
+//   margin-top: 30px;
+
+
+//   label {
+//     width: 20%;
+//     padding-right: 20px;
+//     margin-bottom: 5px;
+//   }
+
+//   input[type="text"],
+//   input[type="password"] {
+//     width: 40%;
+//     height: 30px;
+//     padding: 5px;
+//     border-radius: 10px
+//   }
+
+//   @media screen and (max-width: 600px) {
+//     flex-direction: column;
+
+//     input[type="text"],
+//     input[type="password"] {
+//       width: inherit;
+//     }
+//   }
+// }
+
+// button {
+//   max-width: 150px;
+//   padding: 5px 10px;
+// }

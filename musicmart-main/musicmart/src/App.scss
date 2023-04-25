@@ -1,0 +1,226 @@
+$font-stack: -Roboto Condensed, Sans-Serif, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$font-size: 15px;
+$color: white;
+$background-color: #121212;
+
+$error-color: #f21e08;
+$max-width: 350px;
+
+$greyLight: #131313;
+$greyLighter: #282828;
+$greyDark: #040404;
+$greyText: #b3b3b3;
+$greyNav: #090909;
+$transition: 0.3s ease-in-out all;
+$greenMain: #1db954;
+
+// --headingFont: 'Roboto Condensed', Sans-Serif;
+// --bodyFont: 'Cabin', Sans-Serif;
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;  
+  font-family: $font-stack;
+  font-size: $font-size;
+  color: $color;
+  // width: 60%;
+  // margin: 90px auto;
+
+
+  // background-color: grey;
+   
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
+}
+
+.subText{
+  font-size: 0.9rem;
+  color: $greyText;
+}
+
+.app{
+  height: calc(100vh - 90px);
+  background: $greyLight;
+  display: flex;
+}
+.navBar{
+  width: 250px;
+  height: 100%;
+  background: $greyDark;
+  padding: 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  .logo{
+    padding: 1.5rem 0.8rem;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      color: $greyText;
+      list-style-type: none;
+      border-radius: 5px;
+      padding: 0.8rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &.active{
+        background: $greyLighter;
+      }
+      &:hover{
+        color: white;
+      }
+    }
+  }
+  .cookies {
+    font-size: 0.7rem;
+    color: $greyText;
+    text-align: center;
+    margin-top: auto;
+    padding: 3rem;
+    span{
+      display: block;
+    }
+  }
+}
+
+.outerWrap{
+  background: grey;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.musicControls{
+  background: $greyLighter;
+  text-align: center;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+  position: relative;
+  border-top: 1px solid $greyDark;
+}
+
+.upperNav{
+  background: $greyNav;
+  height: 56px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  z-index: 2;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.main{
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+  padding-top: 3.4rem;
+  .mainContent{
+    color: white;
+    padding: 1rem 2rem;
+    h1, h2{
+      font-size: 1.8rem;
+    }
+  }
+}
+
+
+.cardsWrap{
+
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between; /* Optional: add spacing between the cards */
+  // margin-top: 20px;
+
+  padding-bottom: 1.8rem;
+  h2{
+    margin-bottom: 0;
+  }
+
+  .cardsWrapInner{
+
+  }
+  .subText{
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+  cursor: pointer;
+  .card{
+    background: $greyLighter;
+    border-radius: 10px;
+    width: 190px;
+    margin-right: 1.2rem;
+    overflow: hidden;
+    padding: 1.2rem;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3),
+        0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    transition: all 1s;
+    &:hover {
+      .play-icon{
+        opacity: 1;
+      }
+    }
+    .cardImage{
+      height: 190px;
+      box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3),
+        0 1px 2px 0 rgba(0, 0, 0, 0.2);
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .cardContent{
+    padding: 0.4rem 0;
+    h3 {
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.6px;
+      margin-top: 20px;
+    }
+    span{
+      font-size: 0.8rem;
+      color: $greyText;
+    }
+  }
+
+}
+
+.play-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow:hidden;
+  display: flex;
+  background-color: $greenMain;
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  margin-left: auto;
+  opacity: 0;
+  svg{
+    margin:auto
+  }
+}
+
+
