@@ -12,4 +12,4 @@ User-friendly interface and intuitive design for easy navigation
 To use our music application, simply visit https://musicmart2.netlify.app/
 
 ## Feedback
-We value your feedback and suggestions for improving our music application. If you have any questions or comments, please reach out to us at contact@readmegithub.com.
+We value your feedback and suggestions for improving our music application. If you have any questions or comments, please reach out to us at udegbunamonyedikabenjamin@gmail.com
